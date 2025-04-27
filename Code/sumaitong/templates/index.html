@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sumaitong Scraper</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .result-container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        .loading {
+            text-align: center;
+            display: none;
+            margin: 20px 0;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .success {
+            color: green;
+            text-align: center;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container w3-display-middle">
+        <div class="w3-panel w3-card" style="height: auto; min-height: 400px;">
+            <h1>Sumaitong Products Scraper</h1>
+            <form id="scrapeForm" action="/" method="post">
+                <input type="text" name="keyword" placeholder="输入关键词" required>
+                <input type="submit" value="开始爬取">
+            </form>
+            
+            <div id="loading" class="loading">
+                <p>正在爬取数据，请稍候...</p>
+            </div>
+            
+            <div id="error" class="error"></div>
+            <div id="success" class="success"></div>
+            
+            <div id="resultContainer" class="result-container" style="display: none;">
+                <h3>爬取结果</h3>
+                <div id="resultTable"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('scrapeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 显示加载状态
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('error').textContent = '';
+            document.getElementById('success').textContent = '';
+            document.getElementById('resultContainer').style.display = 'none';
+            
+            // 获取表单数据
+            const formData = new FormData(this);
+            
+            // 发送请求
+            fetch('/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 隐藏加载状态
+                document.getElementById('loading').style.display = 'none';
+                
+                if (data.status === 'success') {
+                    document.getElementById('success').textContent = '爬取成功！';
+                    displayResults(data.data);
+                } else {
+                    document.getElementById('error').textContent = data.message || '爬取失败';
+                }
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').textContent = '请求失败：' + error.message;
+            });
+        });
+
+        function displayResults(data) {
+            const resultTable = document.getElementById('resultTable');
+            resultTable.innerHTML = '';
+            
+            if (data.length === 0) {
+                resultTable.innerHTML = '<p>没有找到数据</p>';
+                return;
+            }
+            
+            // 创建表格
+            const table = document.createElement('table');
+            
+            // 创建表头
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            Object.keys(data[0]).forEach(key => {
+                const th = document.createElement('th');
+                th.textContent = key;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+            
+            // 创建表格内容
+            const tbody = document.createElement('tbody');
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                Object.values(item).forEach(value => {
+                    const td = document.createElement('td');
+                    td.textContent = value;
+                    row.appendChild(td);
+                });
+                tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
+            
+            resultTable.appendChild(table);
+            document.getElementById('resultContainer').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,2410 @@
+2025-04-18 16:19:31 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: sumaitong)
+2025-04-18 16:19:45 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: sumaitong)
+2025-04-18 16:19:45 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.13.5, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 24.11.0, Python 3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:16) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.0.16 11 Feb 2025), cryptography 44.0.1, Platform Windows-10-10.0.19045-SP0
+2025-04-18 16:19:45 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-04-18 16:19:45 [asyncio] DEBUG: Using selector: SelectSelector
+2025-04-18 16:19:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:19:45 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:19:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:19:45 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:19:45 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-04-18 16:19:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.closespider.CloseSpider']
+2025-04-18 16:19:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'sumaitong',
+ 'CLOSESPIDER_TIMEOUT': 15,
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_LIMIT': 10,
+ 'DOWNLOADER_CLIENT_TLS_METHOD': 'TLSv1.2',
+ 'DOWNLOAD_DELAY': 2,
+ 'DOWNLOAD_TIMEOUT': 10,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/scrapy.log',
+ 'NEWSPIDER_MODULE': 'sumaitong.spiders',
+ 'SPIDER_MODULES': ['sumaitong.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-04-18 16:19:45 [selenium.webdriver.common.selenium_manager] DEBUG: Selenium Manager binary found at: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe
+2025-04-18 16:19:45 [selenium.webdriver.common.selenium_manager] DEBUG: Executing process: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe --browser chrome --language-binding python --output json
+2025-04-18 16:19:52 [selenium.webdriver.common.selenium_manager] DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-18 16:19:52 [selenium.webdriver.common.selenium_manager] DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-18 16:19:52 [selenium.webdriver.common.service] DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 13268 using 0 to output -3
+2025-04-18 16:19:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:64601/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled']}}}}
+2025-04-18 16:19:53 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): localhost:64601
+2025-04-18 16:19:53 [urllib3.connectionpool] DEBUG: http://localhost:64601 "POST /session HTTP/1.1" 200 0
+2025-04-18 16:19:53 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir13268_354235653"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:64609"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"141c3727c06d2a7b0a0be50888d41752"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:19:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:19:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:64601/session/141c3727c06d2a7b0a0be50888d41752/window/maximize {}
+2025-04-18 16:19:53 [urllib3.connectionpool] DEBUG: http://localhost:64601 "POST /session/141c3727c06d2a7b0a0be50888d41752/window/maximize HTTP/1.1" 200 0
+2025-04-18 16:19:53 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"height":1056,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:19:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:19:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'sumaitong.middlewares.ProxyDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'sumaitong.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'sumaitong.middlewares.SliderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-04-18 16:19:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-04-18 16:19:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['sumaitong.pipelines.ProductListPipeline',
+ 'sumaitong.pipelines.ShopDetailPipeline',
+ 'sumaitong.pipelines.ProductDetailPipeline',
+ 'sumaitong.pipelines.SumaitongPipeline']
+2025-04-18 16:19:59 [scrapy.core.engine] INFO: Spider opened
+2025-04-18 16:19:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-04-18 16:19:59 [sumaitong_crawler] INFO: RandomUserAgentMiddleware is enabled.
+2025-04-18 16:20:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/)
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.99,
+ 'product_name': '1pcs CRIN1 Common Rail Injector Solenoid Oil Return Connect '
+                 'Joints T/L Way for BOSCH 110',
+ 'sales': 157,
+ 'seller_id': 2672618592,
+ 'store_name': 'TODIESEL TOOLS Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 29.13,
+ 'product_name': 'Fuel Injector 0280158399 420874845 For CANAM CAN AM Can-Am '
+                 'Maverick X3 2018-2020',
+ 'sales': 1,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.99,
+ 'product_name': '1PCS Diesel Common Rail Injector Return Joint 2 Ways 3 for '
+                 '0445 110',
+ 'sales': 291,
+ 'seller_id': 244095422,
+ 'store_name': 'Automotive Repair Factory Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 36.79,
+ 'product_name': '8pcs/lot Car Fuel Injector Nozzle For Delphi 99-07 for GM '
+                 'Chevy GMC 4.8L 5.3L 6.0L 25317628 Car Auto Accessories',
+ 'sales': 2,
+ 'seller_id': 6000247381,
+ 'store_name': 'Dreamizer Motorcycle Accessories Local Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 90,
+ 'product_name': 'High quality 0445110290 3380021900 3380027000 3380027900  '
+                 'Common Rail Injecto For Hyundai Kia D4EA Fuel Injector '
+                 'Nozzle',
+ 'sales': None,
+ 'seller_id': 2668273644,
+ 'store_name': 'Sensor manufacturer Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 1.05,
+ 'product_name': '1PCS CRIN1 Diesel Common Rail Injector Oil Return Tube '
+                 'Connect Joints T-way L-way for 110',
+ 'sales': 445,
+ 'seller_id': 2672618592,
+ 'store_name': 'TODIESEL TOOLS Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 39.9,
+ 'product_name': '0445110629 0445110183 0445110494 0445110293 0445110291 '
+                 '0445110317 Common Rail Injector For 110 Series Injector',
+ 'sales': 56,
+ 'seller_id': 234458026,
+ 'store_name': 'Engine Injector Nozzle Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 216.91,
+ 'product_name': 'Diesel Fuel Injector 03L130277B 03L130277S for Audi Skoda '
+                 'for 1.6 TDI for VW GOLF PASSAT POLO JETTA  A2C59513554 '
+                 'A2C9626040080',
+ 'sales': 16,
+ 'seller_id': 6001250699,
+ 'store_name': 'Tarzan Engineering Machinery Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.7,
+ 'product_name': 'Fuel Injector Nozzle for Yamaha Grizzly 550 YFZ450R '
+                 '2009-2017 3B4-13761-00-00 700 2007-2015',
+ 'sales': 8,
+ 'seller_id': 239142772,
+ 'store_name': 'Light Of EC China Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.56,
+ 'product_name': '1 PCS/4 PCS OEM  23209-22040 23250-22040 2320922040 '
+                 '2325022040 High Energy Fuel Injector For Toyota Corolla '
+                 'Matrix 1TR 2TR 3RZ',
+ 'sales': 14,
+ 'seller_id': 2682817024,
+ 'store_name': 'Chao Hong Auto Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 145.11,
+ 'product_name': 'Bestseller High Quality New 0445110088 0445110119 Fuel '
+                 'Injector For Alfa Romeo 156 147 Fiat Bravo 1.9 JTD',
+ 'sales': None,
+ 'seller_id': 6002227373,
+ 'store_name': 'Shop1104699308 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.55,
+ 'product_name': '4Pcs Injector Nozzles For Toyota Yaris Vitz 1.0L 1.3L '
+                 '1999-2005 23250-23020 23209-29015 23250 23020',
+ 'sales': 8,
+ 'seller_id': 238232160,
+ 'store_name': "LN's Automobiles & Motorcycles Store"}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 18.81,
+ 'product_name': '4Pcs Car Fuel Injector For Toyota Avanza F601RM K3VE 1.3L '
+                 'Daihatsu Terios 23250-97401',
+ 'sales': 2,
+ 'seller_id': 6001473695,
+ 'store_name': 'Shop1104674916 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 90.67,
+ 'product_name': '0445110194 Diesel Injector Nozzle A6480700387 Fuel Sprayer '
+                 'Inyector for MERCEDES-BENZ W211 E320',
+ 'sales': None,
+ 'seller_id': 6001250699,
+ 'store_name': 'Tarzan Engineering Machinery Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.23,
+ 'product_name': '4Pcs 470Cc Fuel Injector 0280156280 for Opel Astra Zafira '
+                 'C20Let Z20Let Z20Leh Z20Lel Z20Ler 2.0L 55556799',
+ 'sales': 4,
+ 'seller_id': 240049578,
+ 'store_name': 'Hyperfocus Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 24.42,
+ 'product_name': 'Topteng 4PCS Fuel Injectors 23250-23020 Fit Toyota Yaris '
+                 'Vitz 1.0L 1.3L 1999-2005',
+ 'sales': 12,
+ 'seller_id': 2677418653,
+ 'store_name': 'Topteng Official Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 88.61,
+ 'product_name': '0445110469 Fuel injector 04L130277AC for Audi A3 A4 Q5 2.0 '
+                 'TDI',
+ 'sales': None,
+ 'seller_id': 6001250699,
+ 'store_name': 'Tarzan Engineering Machinery Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 19.72,
+ 'product_name': '4PCS Fuel Injectors For Toyota Celica Corolla Matrix MR2 '
+                 'Spyder 1.8L MR2 2.0L 23250-22040 23250-0D040 Fuel Injectors '
+                 'Nozzle',
+ 'sales': 23,
+ 'seller_id': 2675282356,
+ 'store_name': 'Car Parts Global Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.79,
+ 'product_name': 'OEM IWP182 Fuel Injector Nozzle for Piaggio Gilera Vespa '
+                 'PI8732885 GTS250 300 IWP 182 IWP182',
+ 'sales': 49,
+ 'seller_id': 200039123,
+ 'store_name': 'Max-Power Racing Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 42.58,
+ 'product_name': 'EJR03101D EJR05101D Diesel Fuel Injector Nozzle 28232251 '
+                 '166001137R For Renault Nissan Suzuki 1.5 dCi',
+ 'sales': None,
+ 'seller_id': 6001005946,
+ 'store_name': 'WDpart Engineering Engine Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 20.43,
+ 'product_name': 'Fuel Injector Nozzle 23250-0C050 For Toyota Hilux Land '
+                 'Cruiser Prado Fortuner Tacoma Hiace Coaster Innova 4Runner '
+                 '2693cc 2.7L',
+ 'sales': 14,
+ 'seller_id': 2677610817,
+ 'store_name': 'S1-Vehicle Parts Wholesale Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 1.88,
+ 'product_name': '1 Piece Fuel Injector 23250-0T020 For 09-15 Toyota Corolla '
+                 'Matrix 1.8L Fj1068',
+ 'sales': 5,
+ 'seller_id': 240092077,
+ 'store_name': 'QP car motorcycle accessories Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 86,
+ 'product_name': '0445110201 0445110202 A6130700887 Diesel Fuel Injector for '
+                 'Mercedes-Benz Vito ML270 99-2003 / Sprinter 2000-06 '
+                 'OM611.980',
+ 'sales': None,
+ 'seller_id': 2679891290,
+ 'store_name': 'Mechinery Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 44.36,
+ 'product_name': '0445110677 0445110376 0445110511 0445110059 0445110331 '
+                 '0445110183 Common Rail Fuel Injector For Bosch Injector 110 '
+                 'Series',
+ 'sales': 1,
+ 'seller_id': 252521271,
+ 'store_name': 'DRLTD common rail sensor Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.54,
+ 'product_name': 'Fuel Injectors Seals O-Ring Repair Filters for 1998-2003 '
+                 'Mitsubishi Montero Sport 3.0L 195500-3170 MD332733',
+ 'sales': 6,
+ 'seller_id': 2681666104,
+ 'store_name': 'Shop1103716150 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 27.68,
+ 'product_name': 'Bestseller 0445120002 New Diesel Fuel Injector 0986435501 '
+                 'For Citroen Jumper Iveco Daily Peugeot Boxer Fiat Ducato 2.8 '
+                 'HDI 1999-',
+ 'sales': None,
+ 'seller_id': 6002227373,
+ 'store_name': 'Shop1104699308 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.9,
+ 'product_name': 'Fuel Injector 0280155803 96288914 962889 for Peugeot 306 406 '
+                 '605 806 for Citroen Xm Xantia Xsara Synergie 2.0 16V',
+ 'sales': 1,
+ 'seller_id': 2667721640,
+ 'store_name': 'ZCN Store Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 11.15,
+ 'product_name': 'Fuel Injector 25377439 for UTV 700 MSU700 HS700 HiSUN '
+                 'MASSIMO 16400-007C-000P',
+ 'sales': 32,
+ 'seller_id': 221869637,
+ 'store_name': 'GORST Official Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 99.22,
+ 'product_name': 'Source Factory 0445110327 New Fuel Injector 0 445 110 327 '
+                 '55566050 Common Rail Injection For ALFA FIAT OPEL',
+ 'sales': None,
+ 'seller_id': 6002229774,
+ 'store_name': 'Henan Zhongjin Auto Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.99,
+ 'product_name': '6 Sets 0280155831 Fuel Injectors Seals Repair Kit O-Rings '
+                 'Caps Filter for Volvo C70 S60 S70 S80 V70 XC70 XC90 2.4 2.5 '
+                 '2.8 2.9L',
+ 'sales': 22,
+ 'seller_id': 237991619,
+ 'store_name': 'AvantDigital Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 17.16,
+ 'product_name': '4Pcs 0280158034 Fuel Injectors For Dacia 2004 Lodgy Dokker '
+                 'Renault Logan 1.4-1.6L 8200227124 75114034 6001548024',
+ 'sales': 26,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 80.1,
+ 'product_name': 'NEW 28231014 1100100-ED01 New Diesel Injector Nozzle For '
+                 'Delphi Great Wall Hover H5 H6 GW4D20 2.0T Engine',
+ 'sales': None,
+ 'seller_id': 2668273644,
+ 'store_name': 'Sensor manufacturer Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.16,
+ 'product_name': '6Pcs/Lot Fuel Injectors 195500-3170 1955003170 MD332733 for '
+                 'Mitsubishi Montero Sport 3.0L 6G72 1998-2003',
+ 'sales': 16,
+ 'seller_id': 238248637,
+ 'store_name': 'Car-E Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.61,
+ 'product_name': '4Pcs Engine Fuel Injector 39-N041 8M6002428 for Mercury '
+                 'Outboard 90HP 150HP 4-Stroke Mercruiser',
+ 'sales': 19,
+ 'seller_id': 240117518,
+ 'store_name': 'Shop5777765 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 152.88,
+ 'product_name': 'For Mercedes-Benz Chrysler Jeep Fuel piezoelectric injector '
+                 '0445115064 0445115063 0986435355 A6420701387 A6420701587',
+ 'sales': None,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 13.28,
+ 'product_name': 'Free shipping Genuine top feed fuel injector 23250-28030 For '
+                 'toyota fuel injector 23209-28030',
+ 'sales': 26,
+ 'seller_id': 110122812,
+ 'store_name': 'tuning and high performance store '}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 1.5,
+ 'product_name': 'Common Rail Injector Fuel Tube Return Pipe Steel Joints for '
+                 'Isuzu Denso 4KH1 D-MAX 4JJ 4JK',
+ 'sales': 25,
+ 'seller_id': 2679627180,
+ 'store_name': 'TANTESTO TOOLS Official Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 100,
+ 'product_name': 'High quality New 0445110475 0445110550 0445110551 Fuel '
+                 'Injector For Audi Seat Leon Skoda Octavia VW',
+ 'sales': None,
+ 'seller_id': 2673315289,
+ 'store_name': 'Fuel Injector Manufacturer Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.6,
+ 'product_name': 'OEM IWP182 Fuel Injector Nozzle For Piaggio Gilera Vespa GT '
+                 '6389495 8732885 PI8732885 IWP 182',
+ 'sales': 38,
+ 'seller_id': 252505367,
+ 'store_name': 'WENXI Official Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 2.83,
+ 'product_name': 'Fuel Injectors Fit For Polaris RZR Sportsman Ranger EFI 700 '
+                 '800 OEM 1202863 0280156208',
+ 'sales': 6,
+ 'seller_id': 2675233274,
+ 'store_name': 'BoFie Car Mod HiLites Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 120,
+ 'product_name': 'New 0445120073  0986435550 ME194299 107755-0230  Fuel '
+                 'Injector  Auto Engine Parts',
+ 'sales': 7,
+ 'seller_id': 2668273644,
+ 'store_name': 'Sensor manufacturer Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.2,
+ 'product_name': 'Car Fuel Injector Fuel Injector Fuel Injector for Hyundai '
+                 'Kia 35310-02900 3531002900',
+ 'sales': 25,
+ 'seller_id': 240533212,
+ 'store_name': 'QA-Racing Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.83,
+ 'product_name': 'IWP-182 Fuel Injector for Piaggio X8 X7 MP3 Carnaby BV '
+                 'Beverly Gilera Nexus 300 250 Vespa GTV 300 GTS 300/250 '
+                 '6389495 8732885',
+ 'sales': 40,
+ 'seller_id': 2676649240,
+ 'store_name': 'Best Auto Part Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 78.14,
+ 'product_name': 'New Diesel Fuel Injector Nozzle 0445110250 WLAA13H50 for '
+                 'Mazda BT-50 Ford Ranger 2.5L 2006-2011 WLAA-13-H50',
+ 'sales': None,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 7.21,
+ 'product_name': 'Fuel Injector Nozzle 35310-23210 35310 23210 For Hyundai '
+                 '95-00 Elantra Tiburon 96-01 2.0L',
+ 'sales': 5,
+ 'seller_id': 230727788,
+ 'store_name': 'DO NOT GO Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.82,
+ 'product_name': '4 PCS Auto Parts Fuel Injectors  For Peugeot 206 306 307 '
+                 'Peugeot 106 206 306 Partner Citroen Berlingo C2 OEM 01F002A '
+                 '0280156357',
+ 'sales': 92,
+ 'seller_id': 2672930230,
+ 'store_name': 'WEN DE Industrial - Truck - Auto Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 70.28,
+ 'product_name': 'New Diesel Fuel Injector Assembly 0445110183 0445110363 '
+                 '0445110511 1pc',
+ 'sales': None,
+ 'seller_id': 6001214716,
+ 'store_name': 'DFME- Auto Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 18.76,
+ 'product_name': '4PCS Fuel Injectors Nozzle 6D8-13761-00-00 for Yamaha '
+                 'Outboard 75HP 90HP F75 F90',
+ 'sales': 5,
+ 'seller_id': 6000835505,
+ 'store_name': 'Shop1104204565 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 16.17,
+ 'product_name': '4 pieces x PETROL ENGINE GREEN FUEL INJECTOR For VW GOLF '
+                 'BORA Jetta BEETLE AUDI A3 037906031AL 037 906 031 AL',
+ 'sales': 5,
+ 'seller_id': 116289739,
+ 'store_name': 'Cardone-Pabokay Parts Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 121.42,
+ 'product_name': '0445110592 0445110515 0445110787 Common Rail Electric Fuel '
+                 'Injector Nozzle Assembly For Bosch SAIC MAXUS T60',
+ 'sales': None,
+ 'seller_id': 6000566680,
+ 'store_name': 'Machine Part Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4,
+ 'product_name': 'Car Fuel Injector OEM 23250-21020 For Toyota '
+                 'Prius/Echo/Scion xA-xB 1.5L',
+ 'sales': 15,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 11.1,
+ 'product_name': 'Fuel Injector 21150162D For Benz Truck G026B00415',
+ 'sales': 43,
+ 'seller_id': 2676409265,
+ 'store_name': 'GORST Official Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 127.02,
+ 'product_name': '..Feul Injector 0445117021 0445117022 0445117076 0986435413 '
+                 '059130277CD For AUDI A4 A5 A6 A7 A8 Q7 VW Touareg 3.0T '
+                 'Engine',
+ 'sales': None,
+ 'seller_id': 6002227373,
+ 'store_name': 'Shop1104699308 Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 60.4,
+ 'product_name': '0445110092 33800-4A000 New Diesel Fuel Injector For HYUNDAI '
+                 'H1 STAREX / KIA SORENTO 2.5 CRDi 2002-',
+ 'sales': 40,
+ 'seller_id': 2675522164,
+ 'store_name': 'Auto Car Home Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 16.86,
+ 'product_name': '15710-11H00 Fuel Injector for Suzuki King Quad 450 LT-A450 '
+                 'LTA450 2007-2010 King Quad 500 LT-A500 LTA500 2009-2014 '
+                 '1571011H00',
+ 'sales': 5,
+ 'seller_id': 2676649240,
+ 'store_name': 'Best Auto Part Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 111.37,
+ 'product_name': '1Pcs New 4M50,0445120076 Automobile Diesel Fuel Injector '
+                 'Nozzle ME226793 Cars Accessories For Mitsubishi Fuso FE 4M50',
+ 'sales': None,
+ 'seller_id': 6001356317,
+ 'store_name': 'SINOCMP Interior & Exterior Parts Store Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.39,
+ 'product_name': 'Motorcycle Fuel Injector Nozzle for CFMOTO CF550 CF 550 ATV '
+                 '550Cc 0GR0-171000',
+ 'sales': 6,
+ 'seller_id': 240815341,
+ 'store_name': 'Auto&#39;s Market Supplies Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.82,
+ 'product_name': '01F023 Fuel Injector For CITROEN C3 PEUGEOT 206 1984G0 '
+                 '9655833580 01F-023 348002 01F023',
+ 'sales': 37,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 81.47,
+ 'product_name': '1PC Injector 0445110435 For Iveco Daily Fiat Ducato 2.3D '
+                 'with Three Month Warranty Excavator Professional '
+                 'Accessories ',
+ 'sales': None,
+ 'seller_id': 2680345781,
+ 'store_name': 'SINOCMP Online Store'}
+2025-04-18 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.13,
+ 'product_name': 'Fuel Injectors 23250-22040 23209-22040 23250-0D040 Fuel '
+                 'Nozzles Suitable for Toyota',
+ 'sales': 5,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0)
+2025-04-18 16:20:04 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\core\scraper.py:208: UserWarning: The "SumaitongCrawlerSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.79,
+ 'product_name': '1PCS Diesel Engine Injector Return Pipe Leak Off Oil '
+                 'Connector T/L-type for 4JJ1 Denso Isuzu 4KH1 D-MAX Parts '
+                 '8973152312',
+ 'sales': 230,
+ 'seller_id': 239949866,
+ 'store_name': 'ALYTEST DIESEL TOOLS PARTS Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 26.09,
+ 'product_name': '23250-35040 23209-35 040 4PCS Car Engine Parts Fuel '
+                 'Injectors Nozzle For Toyota 4Runner 89-95 2.4L Hilux 94-99 '
+                 'Auto Accessories',
+ 'sales': None,
+ 'seller_id': 2679674023,
+ 'store_name': 'Shop1103683091 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 481.6,
+ 'product_name': 'AP02 4x Fuel Injectors for Kia K2500 Bongo Hyundai H-1 Cargo '
+                 '/ Travel 2.5 CRDi 2008- 28229873 338004A710',
+ 'sales': None,
+ 'seller_id': 2680777065,
+ 'store_name': 'GLOSSY AUTO PARTS Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.52,
+ 'product_name': 'Green Giant 42Lb E85 440Cc Fuel Injector 0280 155 968 '
+                 '0280155968 Fuel Injector For - VOLVO Golf',
+ 'sales': 9,
+ 'seller_id': 240027631,
+ 'store_name': 'AU CAR Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 77.77,
+ 'product_name': 'high performance：1Pcs Fuel Injector 0445120212 0445 0 445 '
+                 '120 212 Compatible For Cummins ISBE Engine DAF Iveco VW',
+ 'sales': None,
+ 'seller_id': 6002229774,
+ 'store_name': 'Henan Zhongjin Auto Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 29.96,
+ 'product_name': '4pcs Fuel injector FBJB100 16600-5L300 0280155937 For '
+                 '2000-2002 Nissan Sentra 1.8L L4 QG18DE Auto Parts',
+ 'sales': 3,
+ 'seller_id': 6000278701,
+ 'store_name': 'FYTTUA Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 36,
+ 'product_name': 'PEIVSO 4pcs 23209-28080 23250-28080 Fuel Injector For '
+                 'TOYOTA&LEXUS MATRIX COROLLA CAMRY RAV4 HIGHLANDER ES240 2.4L '
+                 '2AZ',
+ 'sales': 1,
+ 'seller_id': 202475992,
+ 'store_name': 'PEIVSO Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 179.26,
+ 'product_name': 'New 0445110274 0445110275 New Diesel Fuel Injector Assy '
+                 '33800-4A500 For Hyundai Starex H1 I800 Iload / KIA Sorento '
+                 '2.5 CRDI D4CB',
+ 'sales': None,
+ 'seller_id': 6002229774,
+ 'store_name': 'Henan Zhongjin Auto Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 65.07,
+ 'product_name': '4pcs 0280158040 980cc Fuel Injectors for Bosch Nozzle Valve '
+                 'EV14KT Petrol',
+ 'sales': 2,
+ 'seller_id': 2658794223,
+ 'store_name': 'SINOCMP Car Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.81,
+ 'product_name': 'Car Fuel Injector 0280158038 for BMW R1200GS R ST RT',
+ 'sales': 4,
+ 'seller_id': 238841434,
+ 'store_name': 'About Car Life Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 69.36,
+ 'product_name': 'Factory direct sales：0445120277 0445120265 0445120266 Common '
+                 'Rail Fuel Injector Nozzle 0445120140 0445120066 0445120297',
+ 'sales': None,
+ 'seller_id': 6002229774,
+ 'store_name': 'Henan Zhongjin Auto Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.06,
+ 'product_name': '4pcs Fuel Injector 23250-22040 For Toyota Chevy Prizm Matrix '
+                 'Corolla 1.8L 23209-22040 23250-0D040 23209-0D040 Car '
+                 'Accessories',
+ 'sales': None,
+ 'seller_id': 6000247381,
+ 'store_name': 'Dreamizer Motorcycle Accessories Local Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 52.63,
+ 'product_name': 'NEW 0445110351 Diesel Fuel Injector for Fiat 500 PANDA DOBLO '
+                 'PUNTO Ford VAUXHALL OPEL COMBO 1.3D 1.3 TDCi',
+ 'sales': 124,
+ 'seller_id': 2671538790,
+ 'store_name': 'Auto-Car Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 447.9,
+ 'product_name': 'High efficiency 177-4754 Diesel Common Rail Injector Is '
+                 'Suitable For Caterpillar 3126B Series Engine Fuel Injection '
+                 '1774754',
+ 'sales': None,
+ 'seller_id': 6002229774,
+ 'store_name': 'Henan Zhongjin Auto Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 14,
+ 'product_name': 'PAT Motorcycle Fuel Injector F01R00MG08',
+ 'sales': 7,
+ 'seller_id': 238954672,
+ 'store_name': 'JIAHE666 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.36,
+ 'product_name': '\u200b4PCS Fuel Injector Nozzle 9023783 0280157108 For '
+                 'Chevry Aveo Sail 1.4',
+ 'sales': 5,
+ 'seller_id': 252138607,
+ 'store_name': 'Hua Auto Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 76.03,
+ 'product_name': '1Pcs Diesel Injectors 6.6L  0986435521 0445120042 For GMC '
+                 'Savana Sierra 2500 3500 Chevy 2006-2007',
+ 'sales': None,
+ 'seller_id': 6001356317,
+ 'store_name': 'SINOCMP Interior & Exterior Parts Store Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 58.82,
+ 'product_name': '0445110520 0445110418 New Fuel Injectors Diesel for Fiat '
+                 'Ducato Iveco Daily Citroen Peugeot 2.3D 5801594342 504389548 '
+                 '1609097280',
+ 'sales': 126,
+ 'seller_id': 2675329572,
+ 'store_name': 'Shop1102994032 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 20.31,
+ 'product_name': '4PCS For Toyota 1.8 Engine Corolla Celica Matrix Fuel '
+                 'Injectors Nozzle Replacement Parts 23250-22040 23209-22040 '
+                 '23250-0D040',
+ 'sales': 30,
+ 'seller_id': 2670387571,
+ 'store_name': 'Professional Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 70,
+ 'product_name': '1Pcs Automobile Diesel Fuel Injector Nozzle 0445120050 Cars '
+                 'Accessories Fits For 2007-2012 Dodge Ram 2500 3500 6.7L',
+ 'sales': None,
+ 'seller_id': 6001356317,
+ 'store_name': 'SINOCMP Interior & Exterior Parts Store Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 20.16,
+ 'product_name': '4Pcs Fue Injector for Chevy Opel Corsa Daewoo Cielo 1.6 '
+                 '17124782 17123924 25165453 17103677 ICD00110 17108045',
+ 'sales': 29,
+ 'seller_id': 247047312,
+ 'store_name': "Hanna's Store"}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.51,
+ 'product_name': 'New Fuel Injector for 1988-91 Ford F250 F350 E250 E350 7.5L '
+                 'V8 460 0280150759',
+ 'sales': 1,
+ 'seller_id': 239142772,
+ 'store_name': 'Light Of EC China Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 61.24,
+ 'product_name': '1Pcs Automobile Fuel Injector Nozzle Cars Accessories For '
+                 'Bosch Engines Cummins ISLe Eu3 0445120304 5272937 5283275',
+ 'sales': None,
+ 'seller_id': 6001356317,
+ 'store_name': 'SINOCMP Interior & Exterior Parts Store Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10.35,
+ 'product_name': '1pc Fuel Injectors Nozzle 0280158057 1984F7 9649526780 '
+                 '780001 for BERLINGO C2 C3 C4 PARTNER Box',
+ 'sales': 2,
+ 'seller_id': 241766812,
+ 'store_name': 'Zhenhua Auto Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.58,
+ 'product_name': 'Fuel Petrol Injector Nozzle 03E906031 For Fabia Mk1 Ibiza '
+                 'Mk3 Polo 9N Cordoba Roomster 1.2 03E906031A 03E906031C '
+                 '03E906031E',
+ 'sales': 10,
+ 'seller_id': 2681450261,
+ 'store_name': 'KASturrboo Official Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 67.14,
+ 'product_name': '0445110291 / 1112010-55D New Diesel Fuel Injector Nozzle For '
+                 'BAW Fenix FAW CA4DC',
+ 'sales': None,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 11.08,
+ 'product_name': '1Pc Car Fuel Injector Replaces 5VK-13761-00-00 for Yamaha '
+                 'Raptor 700 700R 2006 2007 2008 2009 2010 2011 2012 2013 2014 '
+                 '2015 2016',
+ 'sales': 5,
+ 'seller_id': 237991619,
+ 'store_name': 'AvantDigital Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.49,
+ 'product_name': '4Pcs Fuel Injector Nozzle 0280156417 for Chana Alsvin '
+                 'Dongfeng Car Accessories',
+ 'sales': 3,
+ 'seller_id': 237003243,
+ 'store_name': 'Mechanical Beast Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 23.15,
+ 'product_name': '0445110291 Fits For Bosch Diesel Injector F00VC01358 Valve '
+                 'Assembly DLLA155P1674 Injection Nozzle For BAW Fenix FAW '
+                 'CA4DC',
+ 'sales': None,
+ 'seller_id': 6001250699,
+ 'store_name': 'Tarzan Engineering Machinery Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 27.71,
+ 'product_name': '6pcs Fuel Injectors Car accessory for Chevrolet Ford LS1 LS6 '
+                 '440Cc 42Lb Bosch 0280155968',
+ 'sales': 23,
+ 'seller_id': 239171290,
+ 'store_name': 'Professional Car 9accessories Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.31,
+ 'product_name': 'Motorcycle Fuel Injector Nozzles 420874834 For SEA-DOO 4-TEC '
+                 'Gtr Gtx Rxp Rxt X Wake Pro 155 215 260 09-17 420874846',
+ 'sales': 26,
+ 'seller_id': 247804499,
+ 'store_name': 'The fighting Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 128.21,
+ 'product_name': '..Diesel Injectors Fit For Fiat Ducato Iveco Daily Citroen '
+                 'Peugeot 2.3D 5801594342 504389548 16097280 0445110520 '
+                 '0445110418.',
+ 'sales': None,
+ 'seller_id': 6002227373,
+ 'store_name': 'Shop1104699308 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.99,
+ 'product_name': '1PCS CRIN1 110 Diesel Engine Injector Return Oil Pipe '
+                 'Connect Joints T L Way',
+ 'sales': 130,
+ 'seller_id': 239949866,
+ 'store_name': 'ALYTEST DIESEL TOOLS PARTS Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.99,
+ 'product_name': '1PCS Diesel Common Rail Injector Return Joint 2 Ways 3  for '
+                 '0445 110',
+ 'sales': 87,
+ 'seller_id': 2676553908,
+ 'store_name': 'Automotive Repair Factory Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 367.52,
+ 'product_name': 'New For Genuine Bosch Diesel Injector 0445124036 For Iveco '
+                 'Trakker 12.9 2013 Onwards',
+ 'sales': None,
+ 'seller_id': 6001250699,
+ 'store_name': 'Tarzan Engineering Machinery Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.03,
+ 'product_name': '4pcs Fuel Injector 23250-22040 23250-0D040 for Toyota Celica '
+                 'MR2 Spyder Corolla Matrix Chevy Prizm Pontiac 1.8L 2000-06 '
+                 '12 Holes',
+ 'sales': 22,
+ 'seller_id': 237991619,
+ 'store_name': 'AvantDigital Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.99,
+ 'product_name': '1pcs CRIN1 Common Rail Injector Solenoid Oil Return Connect '
+                 'Joints T/L Way for BOSCH 110',
+ 'sales': 7,
+ 'seller_id': 2680513242,
+ 'store_name': 'CRDI TOOLS PARTS Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 74.67,
+ 'product_name': 'Diesel Injectors FIt for Fiat Ducato Iveco Daily Citroen '
+                 'Peugeot 2.3D 5801594342 504389548 16097280 0445110520 '
+                 '0445110418',
+ 'sales': 10,
+ 'seller_id': 2680921233,
+ 'store_name': 'Dong Feng Mid-South Enterprise Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 7.12,
+ 'product_name': 'Fuel Injectors OEM ICD00108 FOR GM CORSA 1.6 EFI '
+                 'JAN/1994-JAN/1996',
+ 'sales': 17,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.41,
+ 'product_name': 'Car Fuel Injector 0280158038 For BMW R1200GS R ST RT',
+ 'sales': 14,
+ 'seller_id': 230504445,
+ 'store_name': "Automotive's Professional Parts Store"}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 244.55,
+ 'product_name': 'Common Rail Injector 03L130277B Diesel Fuel Injector '
+                 'A2C59513554 For Audi Seat Skoda VW 1.6 tdi',
+ 'sales': None,
+ 'seller_id': 2679891290,
+ 'store_name': 'Mechinery Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.72,
+ 'product_name': 'Diesel Common Rail Injector Nozzle Oil Return Joint T and L '
+                 'Type Tube Connector for Denso Cummins Isuzu 4KH1',
+ 'sales': 95,
+ 'seller_id': 2675427340,
+ 'store_name': 'BoRoadTo Auto Testing Equipment Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 19.14,
+ 'product_name': '2PCS Fuel Injector 4 Holes Compatible 0280158258 2521068 For '
+                 'Polaris ACE RZR 570 900 Ranger Crew 570 900 Ranger XP 900 '
+                 'Sportsman',
+ 'sales': 3,
+ 'seller_id': 6001125913,
+ 'store_name': 'PinXin Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 91.95,
+ 'product_name': '1PC Auto Car Fuel Injector  Engine Injector for Audi '
+                 '04L130277 04L 130277 04L130277AC 04L130277AC Auto '
+                 'Replacement Parts',
+ 'sales': None,
+ 'seller_id': 2675641197,
+ 'store_name': 'SINOCMP Worldwide Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.3,
+ 'product_name': 'Car Fuel Injector Nozzle 420874840 for Mitsubishi Outlander '
+                 'Jeep Renegade Traxter CAN-AM Defender A2C95620100',
+ 'sales': 9,
+ 'seller_id': 6000201915,
+ 'store_name': 'Iwok-Auto-Phd Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.41,
+ 'product_name': 'Automobile Injector Injector Washer Assembly for Hyundai '
+                 'Terracan 2.9L Diesel 2001-2006 33810-4X600 338104X600',
+ 'sales': 44,
+ 'seller_id': 240025761,
+ 'store_name': 'Shop5792943 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 72.35,
+ 'product_name': '0445110055 Common Rail Injector A6110701187 Diesel Fuel '
+                 'Injection For Mercedes-Benz CDI W210 W211 E200 E220 E270 2.2 '
+                 '2.7',
+ 'sales': None,
+ 'seller_id': 6001046790,
+ 'store_name': 'Tarzan Heavy Machinery Parts Store Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.06,
+ 'product_name': 'Fuel Injectors OEM IWP127 For Ford Fiesta / Ecosport Flex '
+                 '1.0 Supercharger 1.6 Zetec Rocam 8V /Ka',
+ 'sales': 1,
+ 'seller_id': 252505367,
+ 'store_name': 'WENXI Official Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.05,
+ 'product_name': 'Areyourshop1Pc 0280150943 Fuel Injectors For Ford F150 F250 '
+                 'F350 For Lincoln 4.6 5.0 5.4 5.8 V8 0280150939 822-11124 Car '
+                 'Parts',
+ 'sales': 10,
+ 'seller_id': 2671105948,
+ 'store_name': 'Areyourshop Auto Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 73.24,
+ 'product_name': '0445110183 Diesel Fuel Injector For Bosch Fiat 500 Doblo '
+                 'Panda 1.3D Opel Astra H 1.3 CDTI 0986435102',
+ 'sales': None,
+ 'seller_id': 2683753018,
+ 'store_name': 'WD Equipment Store Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 31.71,
+ 'product_name': '4pcs Fuel injector for Ford Fiesta V 2001-2008 Fusion '
+                 '2002-2012 1.4L 98MF-BB Car Auto Parts',
+ 'sales': 8,
+ 'seller_id': 6000278701,
+ 'store_name': 'FYTTUA Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.33,
+ 'product_name': '4 Piece Fuel Injector As Shown Automotive Supplies For '
+                 'Suzuki GSXR 600 750 1000 Hayabusa GSX1300 Fuel Nozzle '
+                 '15710-24F00',
+ 'sales': 11,
+ 'seller_id': 247959332,
+ 'store_name': 'Shop1100025067 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 111.84,
+ 'product_name': 'Bestseller 0445110616 0445110480 13538576298 0986435244 New '
+                 'Diesel Fuel Injector For X3 F25 E90 F30 F10 F11 520D 530D '
+                 '320D 330D',
+ 'sales': None,
+ 'seller_id': 6002227373,
+ 'store_name': 'Shop1104699308 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 20,
+ 'product_name': 'Wholesale Inyectores Bico Injetor Fuel Injector Nozzle '
+                 '23250-22040 23250-0D040 For Corolla Matrix MR2 1.8L Cng '
+                 'Injectors',
+ 'sales': 27,
+ 'seller_id': 234563993,
+ 'store_name': 'Menlischauto Official Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 18.82,
+ 'product_name': 'Fuel Injector 4Pcs/lot For Peugeot 301 308 408 Citroen '
+                 'C-elysee C4 PETROL 9673836680 0280157141',
+ 'sales': 43,
+ 'seller_id': 2659609862,
+ 'store_name': 'Shop1100176284 Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 71.46,
+ 'product_name': 'Diesel Common Rail Fuel Injector For Great Wall 0445110332 '
+                 'Engine Replacement Parts',
+ 'sales': None,
+ 'seller_id': 2675545045,
+ 'store_name': 'Excavator&amp;Truck&amp;Forklift Machine Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.3,
+ 'product_name': 'Motorcycle Fuel Injector 39300-LEB2-800 39300LEB2800 39-049 '
+                 '39049 For Kymco Dink Street',
+ 'sales': 2,
+ 'seller_id': 2671538790,
+ 'store_name': 'Auto-Car Parts Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 26.74,
+ 'product_name': '4pcs FUEL INJECTOR FOR PEUGEOT CITROEN FIAT LANCIA 306 406 '
+                 'ULYSSE 2.0 16V 0280155803',
+ 'sales': 3,
+ 'seller_id': 2671896134,
+ 'store_name': 'Wonyton Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 247.61,
+ 'product_name': '1660000Q2K Fuel injector for Renault Nissan M9T 2.3dci '
+                 '166000372R 166003282R 166007840R',
+ 'sales': 1,
+ 'seller_id': 6000566680,
+ 'store_name': 'Machine Part Store'}
+2025-04-18 16:20:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.58,
+ 'product_name': 'OEM IWP182 Fuel Injector Nozzle For Piaggio Gilera Vespa GT '
+                 '6389495 8732885 PI8732885 IWP 182',
+ 'sales': 5,
+ 'seller_id': 232978490,
+ 'store_name': 'PQY RACING Store'}
+2025-04-18 16:20:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/w/wholesale-injector.html?page=2spm=a2g0o.productlist.search.0)
+2025-04-18 16:20:07 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\core\scraper.py:208: UserWarning: The "SumaitongCrawlerSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 15.6,
+ 'product_name': 'MEV1-070 MEV1-003 Two Holes Motorcycle Fuel Injector Nozzle '
+                 'for 110CC-125CC Motorbike Accessories',
+ 'sales': 6,
+ 'seller_id': 247686225,
+ 'store_name': 'Shop1102168627 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 76.47,
+ 'product_name': 'Solenoid Valve 714-11-16840 7141116840 for Komatsu Wheel '
+                 'Loader WA120-3 WA150-3 WA180-3 WA200-3 WA250-3 WA320 WA320-3',
+ 'sales': 1,
+ 'seller_id': 2673241113,
+ 'store_name': 'Benben Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10.9,
+ 'product_name': '75041023144 New Fuel Injector For KTM 350 EXC-F 500 EXC 450 '
+                 '500 XCW 350 XCF 690 Enduro HBERG Husqvarna FE 350 FE 501 FE '
+                 '450',
+ 'sales': 13,
+ 'seller_id': 6000410480,
+ 'store_name': 'Shop1104037221 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.91,
+ 'product_name': 'Fuel Injectors IWP001 IWP003 FIAT: Brava FIAT: Palio (Fire '
+                 'Flex)',
+ 'sales': 6,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.5,
+ 'product_name': 'Diesel Fuel Injector Solenoid Valve 214-5427 2145427 For '
+                 'Caterpillar C7 C9',
+ 'sales': None,
+ 'seller_id': 2671898095,
+ 'store_name': 'Yanzi Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 27.29,
+ 'product_name': '4PCS Car Fuel Injector Nozzle 23250-75100 Fit For Toyota '
+                 '4Runner 2010-2012 Tacoma 2005-2014 2.7L Prado TRJ120 Hilux '
+                 '23250-79155',
+ 'sales': 1,
+ 'seller_id': 240856994,
+ 'store_name': 'S1-Vehicle Parts Wholesale Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 11.29,
+ 'product_name': 'Set of 4 Pieces Fuel Injectors for Yamaha F115 HP Outboard '
+                 '2000-2011 68V-8A360-00-00 CDH210 INP-771 15710-65D00',
+ 'sales': 28,
+ 'seller_id': 238160176,
+ 'store_name': 'Automobile or motorcycle Accessories Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 71.8,
+ 'product_name': '228-9130 228/9130 Fuel Filter Assembly With Electronic Pump '
+                 'Fuel Water Separator 12V',
+ 'sales': None,
+ 'seller_id': 222508093,
+ 'store_name': 'PG Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10.66,
+ 'product_name': 'New Engine Repair Fuel Injector Nozzle 5VK-13761-00-00 For '
+                 'Yamaha Raptor 700 2006-2016 5VK-13761-00 5VK 13761 00 00 '
+                 '5VK1376100',
+ 'sales': 11,
+ 'seller_id': 230585646,
+ 'store_name': 'Autopartsky Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 14.8,
+ 'product_name': 'Fuel Injector Nozzle IW-031 IW031 for Fiat Coupe for Lancia '
+                 'for Dedra 2,0 102 KW T-',
+ 'sales': 1,
+ 'seller_id': 2670745248,
+ 'store_name': 'Wholesale And Retail Of Auto Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 93.89,
+ 'product_name': 'Factory direct sales：0445110049 Diesel Fuel Injector For '
+                 'Land Ro-Ver Free-Lander Op-El Ome-Ga B 2.0 TD4 2000-2006',
+ 'sales': None,
+ 'seller_id': 6002229774,
+ 'store_name': 'Henan Zhongjin Auto Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 20.49,
+ 'product_name': '23250-0C050 Fuel Injector Nozzle For Toyota Hilux Land '
+                 'Cruiser Prado Fortuner Tacoma Hiace Coaster Innova 4Runner '
+                 '2693cc 2.7L',
+ 'sales': 8,
+ 'seller_id': 2679819961,
+ 'store_name': 'Shop1103340418 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 68.64,
+ 'product_name': 'For Citroen Peugeot Ford Mazda 1.6 Hdi 0986435122 0445110239 '
+                 'New Diesel Fuel Injector 1980 H2 96 596 666',
+ 'sales': 8,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 73.77,
+ 'product_name': '6Pcs Automobile New Diesel Fuel Injectors Nozzle Set Cars '
+                 'Accessories For Nissan Patrol GU Y61 TD42 TD42T',
+ 'sales': None,
+ 'seller_id': 6001356317,
+ 'store_name': 'SINOCMP Interior & Exterior Parts Store Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.68,
+ 'product_name': 'Fuel Injector IWP-162 For Multistrada Sport 1198 Gt MOTO '
+                 'GUZZI Breva Norge FOR Harley Davidson 330cc L2 V-TWIN ENGINE '
+                 'OEM IWP162',
+ 'sales': 16,
+ 'seller_id': 2675233274,
+ 'store_name': 'BoFie Car Mod HiLites Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 18.95,
+ 'product_name': '4Pc/Lot Fuel Injector Nozzle For Mazda 2 1.5L-L4 2011-2014 '
+                 'Fiesta 2009 ZJ20-13-250 297500-0460',
+ 'sales': 6,
+ 'seller_id': 238879992,
+ 'store_name': 'MINILULU Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 42.59,
+ 'product_name': '4pcs Fuel Injector Nozle 093500-5700 23600-69105 Common Rail '
+                 'Injector Assembly Car Accessories For TOYOTA 1KZ-T Land '
+                 'Cruiser 1KZ',
+ 'sales': None,
+ 'seller_id': 6001356317,
+ 'store_name': 'SINOCMP Interior & Exterior Parts Store Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 27,
+ 'product_name': '5 PCS  Fuel Injector Nozzle For V-W Rabbit Golf Jetta Beetle '
+                 'Passat 2.5L L5 2007-2013 OEM 07K906031C FJ1067 FI11378S',
+ 'sales': 9,
+ 'seller_id': 2672930230,
+ 'store_name': 'WEN DE Industrial - Truck - Auto Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.2,
+ 'product_name': 'Quality Fuel Injector 35310-03000 3531003000 for Hyundai I10 '
+                 'IA PA I20 Kia Picanto TA Rio III 1.2L G4LA',
+ 'sales': 4,
+ 'seller_id': 238181698,
+ 'store_name': 'Xigeapg Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 46.51,
+ 'product_name': 'Overhaul Kit PCV Solenoid Valve 094040-0081 for HPO Pump PCV '
+                 'Overhaul Kit 094040-0081 with Measuring orifice plate',
+ 'sales': 1,
+ 'seller_id': 2678066327,
+ 'store_name': 'Heihei Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 16.1,
+ 'product_name': '4Pcs Car Fuel Injector for Toyota Prius Echo Scion XA XB '
+                 '1.5L 23250-21020 23209-21020',
+ 'sales': 9,
+ 'seller_id': 238834154,
+ 'store_name': 'Worthwhile Decision Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.05,
+ 'product_name': '4X Fuel Injector High Impedance 210Lb 2200Cc Gas Petrol '
+                 'Methanol 0280158821',
+ 'sales': 9,
+ 'seller_id': 240047976,
+ 'store_name': 'A-Car Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 46.03,
+ 'product_name': 'High Quality Diesel Common Rail Injector 0445120236  for '
+                 'PC300-8 PC350-8 Komatsu',
+ 'sales': None,
+ 'seller_id': 2675619122,
+ 'store_name': 'Dudu Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10.92,
+ 'product_name': '16450-KZR-601 1 Pcs 12 Holes Fuel Injector For Honda PCX '
+                 '2012-2014SH125 2013-2016',
+ 'sales': 1,
+ 'seller_id': 6000415441,
+ 'store_name': 'Hao LIN Auto Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.44,
+ 'product_name': '23250-0C050 Fuel Injector Nozzle\xa0For Toyota Hilux Vigo '
+                 '2TR',
+ 'sales': 2,
+ 'seller_id': 2680369833,
+ 'store_name': 'Standard Car Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 94.39,
+ 'product_name': '4pcs/Lot Fuel Injector Nozzle RE44508 RE48786 Fits For '
+                 'Diesel Engine Injector Parts 29279 RE60062',
+ 'sales': None,
+ 'seller_id': 2675619122,
+ 'store_name': 'Dudu Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 17.15,
+ 'product_name': 'Genuine japanese 23250-28070 High quality fuel injector for '
+                 'RAV4 Avensis  fuel Nozzle 23290-28070 for sale',
+ 'sales': 20,
+ 'seller_id': 110122812,
+ 'store_name': 'tuning and high performance store '}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.45,
+ 'product_name': '2X New High Quality Fuel Injector Nozzles for Chevrolet GM '
+                 '28203962 Car Accessories',
+ 'sales': 19,
+ 'seller_id': 2670600681,
+ 'store_name': 'Shop1102839102 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 71.38,
+ 'product_name': 'Truck Onderdelen Brandstof Feed Injectie Pomp Gebruikt Voor '
+                 'Scania 440020057 1536255 1539298 440020129',
+ 'sales': None,
+ 'seller_id': 2675619122,
+ 'store_name': 'Dudu Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.32,
+ 'product_name': '1/4 Pcs Fuel Injector IWP143 IWP-143 For Renault Clio '
+                 'Platina Megane Scenic Thalia Fuel Injection 0280158170 '
+                 '8200128959 75112142',
+ 'sales': 6,
+ 'seller_id': 2671848945,
+ 'store_name': 'Car Speedy Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 7.34,
+ 'product_name': 'Fuel Injector 1984E2 01F003A For Peugeot 206 307 406 Citroen '
+                 'C4 C5 C8 Evasion Jumpy Xsara 2.0',
+ 'sales': 1,
+ 'seller_id': 239204971,
+ 'store_name': 'XUZHIANG Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 84.06,
+ 'product_name': 'Diesel Fuel Injector 321-3600 10R-7938 2645A753 for CAT '
+                 'C6.4/C6.6 Engine',
+ 'sales': None,
+ 'seller_id': 2675619122,
+ 'store_name': 'Dudu Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10.36,
+ 'product_name': 'Set of 6 Fuel Injectors A1120780049 0280155742 for Mercedes '
+                 'Benz CLK320 E320 C280 ML320 3.2L 2.8L V6 1998-2000',
+ 'sales': 3,
+ 'seller_id': 240929692,
+ 'store_name': 'Shop5871655 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 29.26,
+ 'product_name': '4pcs High Impedance Fuel Injector 0280155791 FJ747 for '
+                 'Volkswagen Car Accessories',
+ 'sales': 5,
+ 'seller_id': 2668730043,
+ 'store_name': 'Auto Engine Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 40.38,
+ 'product_name': 'Voltage Rectifier Regulator OEM 16A11-14001 16A11-14000 '
+                 '16A12-02001 MM409675 MM435745 for MITSUBISHI 24V PEL JOB '
+                 'VOLVO',
+ 'sales': 2,
+ 'seller_id': 2675138166,
+ 'store_name': 'CG Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 19.61,
+ 'product_name': '8Pcs Fuel Injector Car Accessories for GOLF SAVERIO SPACEFOX '
+                 'VOYAGE CROSSFOX 1.6T 0280156403 032906031R',
+ 'sales': 4,
+ 'seller_id': 240825462,
+ 'store_name': 'Mr Motor Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 31.76,
+ 'product_name': '4pcs 0280156431 Fast Delivery Fuel Injector For Japanese Car '
+                 'V3 4A91 Engine',
+ 'sales': 1,
+ 'seller_id': 234563993,
+ 'store_name': 'Menlischauto Official Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 70.08,
+ 'product_name': 'High Quality Diesel Common Rail Fuel Injector OEM 0445110418 '
+                 '0445110520 For FIAT DUCATO/IVECO 504389548 F00VC01201 F00V '
+                 'C01 201',
+ 'sales': None,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 13.42,
+ 'product_name': '2Pcs Fuel Injectors For Suzuki V-STROM DL1000 15710-06G00',
+ 'sales': 2,
+ 'seller_id': 240650774,
+ 'store_name': 'Shop5873152 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.54,
+ 'product_name': 'Areyourshop 1PCS Fuel Injectors Fit for Golf Polo Fox Voyage '
+                 'Flex 1.6L 032906031R  0280156403  Car Auto Pats',
+ 'sales': 6,
+ 'seller_id': 2671105948,
+ 'store_name': 'Areyourshop Auto Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 67.53,
+ 'product_name': '0445110520 0445110418 New Diesel Fuel Injector For Fiat '
+                 'Ducato Iveco Daily Citroen Peugeot 2.3D 1609097280 '
+                 '5801594342 504389548',
+ 'sales': 1,
+ 'seller_id': 6000677123,
+ 'store_name': 'DFME-Commercial Vehicle Spare Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 8.62,
+ 'product_name': '1pc 23250-75050 Fuel Injectors 23209-79095 For TOYOTA Tacoma '
+                 '4Runner T100 Hilux 2.7 3RZFE 2001-2004 Auto Parts',
+ 'sales': 2,
+ 'seller_id': 200635669,
+ 'store_name': 'Kapart Car parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.54,
+ 'product_name': '4PCS 2245027003 Injector Plug Cap For Hyundai Santa Fe 2.0T '
+                 'Trajet Tucson 2000-2010 Injector Install Plug Assy',
+ 'sales': 17,
+ 'seller_id': 238797949,
+ 'store_name': 'An unexpected motorcycle Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 2318.98,
+ 'product_name': 'X-431 LAUNCH X431 PAD 7 & X-PROG3 Set Automotive Diagnostic '
+                 'Programming Tool All Key Lost Key Programmer Immobilizer '
+                 'PADVII PAD7',
+ 'sales': 21,
+ 'seller_id': 200410976,
+ 'store_name': 'LAUNCH Authorized Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 29.92,
+ 'product_name': '4PCS New Fuel Injector For 1990-1995 Nissan Pickup D21 2.4L '
+                 'I4 16600-86G10 1660086G10 16600-86G00 1660086G00 Car Part',
+ 'sales': 23,
+ 'seller_id': 2655793788,
+ 'store_name': 'Pro Vehicle Part Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.42,
+ 'product_name': 'Fuel Injector Nozzle Adapter A2710780023 for Mercedes-Benz '
+                 'W203 C180 1.8T Car Accessories',
+ 'sales': 1,
+ 'seller_id': 240929692,
+ 'store_name': 'Shop5871655 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 14.86,
+ 'product_name': '1/4/6PCS Fuel Injectors  35310-37150  for Hyundai Accent '
+                 '1.6L L4 2006-2011 3531037150',
+ 'sales': 2,
+ 'seller_id': 2674489100,
+ 'store_name': 'BAIXINDE Auto Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 1.86,
+ 'product_name': 'T-Type Joiners Pipe Tube Connectors  Fuel Water for Bosch '
+                 '110 Series Injector Rail Injector Return Oil Backflow Pipe '
+                 'P9JC',
+ 'sales': 24,
+ 'seller_id': 249500708,
+ 'store_name': 'For Your Warm Life Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.17,
+ 'product_name': '4X Fuel Injectors 297500-0540 15710-64J00 for Suzuki Jimny '
+                 'Liana Swift SX4 1.3 1.6 2005-2014',
+ 'sales': 8,
+ 'seller_id': 241403579,
+ 'store_name': 'Lightnings Deals Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 441.23,
+ 'product_name': 'THINKCAR THINKSCAN 689BT All System Car Diagnostic Tool '
+                 'ActiveTest ECU Coding OBD2 Scanner 34 Services CAN FD DoIP '
+                 'Scan Tool',
+ 'sales': 4,
+ 'seller_id': 246399537,
+ 'store_name': 'MUCAR Official Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 13.48,
+ 'product_name': '4Pcs New Fuel Injector Nozzle For Hyundai Elantra IX35 '
+                 'Sonata Tucson KIA CARENS FORTE K3 K5 OPTIMA SOUL 35310-2E100',
+ 'sales': 17,
+ 'seller_id': 241403579,
+ 'store_name': 'Lightnings Deals Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 3.57,
+ 'product_name': 'Car Fuel Injectors 0280150943 9F593-D5A For Ford F150 F250 '
+                 'F350 E150 E250 E350 4.6L 5.0L 5.4L 5.8L Fuel Injection '
+                 'Nozzle',
+ 'sales': 2,
+ 'seller_id': 230582255,
+ 'store_name': "X'S Automobile&motorcycle Accessories Club Store"}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 65.84,
+ 'product_name': 'Common Rail Fuel Diesel Injector 0445110183 For FIAT '
+                 'VAUXHALL 1.3 CDTI OPEL COMBO',
+ 'sales': 1,
+ 'seller_id': 2679891290,
+ 'store_name': 'Mechinery Parts Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 13.92,
+ 'product_name': '4Pcs New Fuel Injector Nozzle 35310-02900 9260930017 '
+                 '3531002900 for Hyundai Atos I10 KIA Picanto 1.1',
+ 'sales': 5,
+ 'seller_id': 240094159,
+ 'store_name': 'Car Molecule Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 23.19,
+ 'product_name': '4x New Fuel Injector For Peugeot 206 307 CITROEN C4 1984F3 '
+                 '0280156139',
+ 'sales': 26,
+ 'seller_id': 2671896134,
+ 'store_name': 'Wonyton Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 1.67,
+ 'product_name': 'Pack of 10 Pieces 4mm 5mm Main Jet M4 M5 for GY6 50cc 139QMB '
+                 'PZ19 Keihin OKO KOSO PWK Mikuni Keihin Carburetor',
+ 'sales': 600,
+ 'seller_id': 239224320,
+ 'store_name': 'UNIQUE H2 Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 53.41,
+ 'product_name': '4x Flow balance Ev1 Deka 850cc High Impedance Nozzle Fuel '
+                 'Injector For Siemens V8 LT1 LS1 LS6 110324  FI114991',
+ 'sales': 32,
+ 'seller_id': 248266410,
+ 'store_name': 'Injection And Pump Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.06,
+ 'product_name': 'Areyourshop 1PCS Fuel Injectors CDH210 880887T For Yamaha '
+                 'F115 HP Outboard 2000-2011 INP771 M02771X4 842-12223 '
+                 '68V8A3600000',
+ 'sales': 9,
+ 'seller_id': 2671105948,
+ 'store_name': 'Areyourshop Auto Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.66,
+ 'product_name': 'Fuel Injector 04102137 04287822 For Deutz 2011 TD 2011 L04 '
+                 'TD 2011 L04I TD 2011 L04W Engine Fuel Supply System Fuel '
+                 'Injector',
+ 'sales': None,
+ 'seller_id': 6001128345,
+ 'store_name': 'SINOCMP Excavator Accessories Store'}
+2025-04-18 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.61,
+ 'product_name': 'Fuel Injector For Infiniti For Nissan 350Z Altima EX35 '
+                 '2007-2012 16600-JK20A',
+ 'sales': 4,
+ 'seller_id': 246881294,
+ 'store_name': 'AV-AUTO Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/w/wholesale-injector.html?page=3spm=a2g0o.productlist.search.0)
+2025-04-18 16:20:10 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\core\scraper.py:208: UserWarning: The "SumaitongCrawlerSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 7.72,
+ 'product_name': 'Fuel Injectors nozzle 15710-58B00 INP470 INP-470 For Suzuki '
+                 'Sidekick Tracker X-90 1.6L 1992-1998',
+ 'sales': 6,
+ 'seller_id': 2676578216,
+ 'store_name': 'YZHIDIANF Autoparts Store Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.88,
+ 'product_name': 'Oil Syringe Pump Syringe Liquid Extractor Pump Automobile '
+                 'Fuel Transfer 1500Ml Large Capacity For Brake Fluid Engine '
+                 'Cooolant',
+ 'sales': 106,
+ 'seller_id': 2675160853,
+ 'store_name': 'Shop1102991704 Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.9,
+ 'product_name': '1pcs CRIN1 Common Rail Injector Solenoid Oil Return Connect '
+                 'Joints T/L Way for BOSCH 110',
+ 'sales': 78,
+ 'seller_id': 2677225024,
+ 'store_name': 'CRDI TOOLS PARTS Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.33,
+ 'product_name': 'T42C-Motorcycle Fuel Injector 39300-LEB2-800 39300LEB2800 '
+                 '39-049 39049 For Kymco Dink Street',
+ 'sales': 1,
+ 'seller_id': 6001214503,
+ 'store_name': 'Shop1104604009 Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 7.21,
+ 'product_name': 'Gasoline Engine Compression Tester Kit, Professional '
+                 'Cylinder Pressure Gauge for Petrol Gas Motor Auto Tool Set '
+                 '(0-300PSI)',
+ 'sales': 83,
+ 'seller_id': 2674538007,
+ 'store_name': 'CHANG QI TOOL Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 18.44,
+ 'product_name': '4Pcs Car Fuel Injector Nozzle 15710-65J00 1571065J00 for '
+                 'Suzuki SX4 2007 2008 2009 2010',
+ 'sales': 3,
+ 'seller_id': 240836257,
+ 'store_name': 'Shop5889328 Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 36.99,
+ 'product_name': '4pcs Fuel injector 23250-74130 For CAMRY VISTA 1.8 4SFE '
+                 'SXS11 ST190 High Performance Engine 2325074130 2320974130',
+ 'sales': 4,
+ 'seller_id': 6000278701,
+ 'store_name': 'FYTTUA Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 15.49,
+ 'product_name': 'M0008P155 Fuel Injector Nozzle Tips for Common Rail Injector '
+                 '5WS40536 8200903034 A2C59513484 China Made New',
+ 'sales': None,
+ 'seller_id': 201769901,
+ 'store_name': 'Shenzhen Shumatt Auto Technology Ltd.'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 13.44,
+ 'product_name': 'High Performance Diesel Auto Parts Fuel Injector Nozzle '
+                 '28101894 6030BS50',
+ 'sales': 1,
+ 'seller_id': 2672281135,
+ 'store_name': 'ZWZ-Auto Parts Service Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10,
+ 'product_name': 'Car Auto Parts Fuel Injector 12681212 12707873 12698484 For '
+                 'Chevrolet GMC 2014-2021',
+ 'sales': 2,
+ 'seller_id': 2671848945,
+ 'store_name': 'Car Speedy Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 72,
+ 'product_name': '0445110315 Fuel Injector 16600-VZ20A for Nissan ZD30 Urvan '
+                 'Caravan Cabstar 3.0L',
+ 'sales': None,
+ 'seller_id': 2679891290,
+ 'store_name': 'Mechinery Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.54,
+ 'product_name': 'Diesel Common Rail Injector Oil Return Tube Pipe Connect '
+                 'Joints Seal Rings T-way L-way For 110',
+ 'sales': 27,
+ 'seller_id': 230574786,
+ 'store_name': 'Comfortable Car Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 7.6,
+ 'product_name': 'Fuel Injectors IWM52300 50100302 For FIAT UNO 1.0 SPI '
+                 'JAN/1995-JAN/2001,VOLKSWAGEN GOL 1.0 SPI JAN/1995-JAN/1996',
+ 'sales': 27,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 432.77,
+ 'product_name': 'THINKSCAN 689BT Lifetime Free Auto Scanner Profession Full '
+                 'System 34 Reset ECU Coding Actuator Test OBD2 Car '
+                 'Diagnostics Tools',
+ 'sales': 406,
+ 'seller_id': 247665381,
+ 'store_name': 'THINKCAR Diagnostic Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 2.99,
+ 'product_name': '1pc Fuel Injector Filter Removal Tool Extractor  for Auto '
+                 'Spare Fuel Injector Serve Kits Moving Old Filter',
+ 'sales': 184,
+ 'seller_id': 236012793,
+ 'store_name': 'ayounes injector repair kits Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 38.92,
+ 'product_name': '4PCS 16600-AA170 Yellow Side Feed Fuel Injector 16600AA170 '
+                 'For Subaru Sti WRX GC8 550cc Fuel injectors Replacement Auto '
+                 'Parts',
+ 'sales': 1,
+ 'seller_id': 2672426498,
+ 'store_name': 'MechApex Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.68,
+ 'product_name': '200/500/1500ML Car Oil Fluid Extractor Filling Syringe '
+                 'Bottle Transfer Fuel Extraction Liquid Oil Auto Manual Brake '
+                 'Oil Pump',
+ 'sales': 59,
+ 'seller_id': 6000381692,
+ 'store_name': 'Shop1104001483 Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.9,
+ 'product_name': 'IWP-189 12 holes Petrol Fuel Injector Shower Style For '
+                 'Ducati 848 1098 1198 MOTO GUZZI 28040161A IWP189',
+ 'sales': 9,
+ 'seller_id': 238846399,
+ 'store_name': 'BINGWFPT Autoparts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.26,
+ 'product_name': 'Car IWP-160 IWP160 Fuel Injector For Fiat Grande Punto Doblo '
+                 'Qubo 1.4L For Ford KA 1.4L 09-16 71792994 77363790',
+ 'sales': 20,
+ 'seller_id': 2671777213,
+ 'store_name': 'LiZHi RACING Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.17,
+ 'product_name': 'GODIAG GT113 Universal Fuel Injector Tester Fuel Injector '
+                 'Cleaner Kit with 6 Sizes of Adapters 8 Pulse Modes for Cars '
+                 'Motorcycle',
+ 'sales': 2,
+ 'seller_id': 200449098,
+ 'store_name': 'Greebid Electron Technology Co., Ltd.'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.03,
+ 'product_name': 'OEM 01F023 Fuel Injector For CITROEN C3 PEUGEOT 206 1984G0 '
+                 '9655833580 01F-023 348002 01F023',
+ 'sales': 10,
+ 'seller_id': 252527214,
+ 'store_name': 'Inter Racing Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.42,
+ 'product_name': '1PCS Diesel Common Rail Injector Return Joint 2 Ways 3 for '
+                 '0445 110',
+ 'sales': 81,
+ 'seller_id': 244095422,
+ 'store_name': 'Automotive Repair Factory Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 55.75,
+ 'product_name': '0445110520 0445110418 New Diesel Fuel Injector For Fiat '
+                 'Ducato Iveco Daily Citroen Peugeot 2.3D 5801594342 504389548 '
+                 '1609097280',
+ 'sales': None,
+ 'seller_id': 2679891290,
+ 'store_name': 'Mechinery Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4,
+ 'product_name': '8200132259 Fuel Injector For Renault Megane 1.6 16v 31 T. KM '
+                 'Replacement Nozzle Injection Petrol H132259 8200132259',
+ 'sales': 42,
+ 'seller_id': 222295366,
+ 'store_name': 'RAQR-RACING Inter-Power Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.71,
+ 'product_name': '4Pcs Car Fuel Injector 0280155885 for Land Rover Freelander '
+                 'MG MG ZT ZT-T ROVER 75 Tourer (RJ) 1.8 16V 1795 1796 86 88 '
+                 '1998-2006',
+ 'sales': 2,
+ 'seller_id': 237991619,
+ 'store_name': 'AvantDigital Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 10.82,
+ 'product_name': 'Upgraded Fuel Injection Pump Pressure Tester Gauge '
+                 'Diagnostic Tools Kit,Engine Gasoline Test Tool Set For Most '
+                 'Cars (New TU-114)',
+ 'sales': 91,
+ 'seller_id': 2674538007,
+ 'store_name': 'CHANG QI TOOL Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 18.36,
+ 'product_name': 'A2820701000 Fuel injectors For Mercedes-Benz',
+ 'sales': 24,
+ 'seller_id': 240545736,
+ 'store_name': 'Tyre_Automate Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.6,
+ 'product_name': 'New Fuel Injector Nozzle 23250-75100 for Toyota Hilux TGN16 '
+                 'Hiace 2TR-FE 2.7L 2005-2014',
+ 'sales': 6,
+ 'seller_id': 247613046,
+ 'store_name': 'Car On the Road Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 245.76,
+ 'product_name': '4PCS New Diesel Fuel Injector 3380027900 0445110126 '
+                 '0445110290 0445110729 For HYUNDAI Santa Fe Tucson / KIA '
+                 'Sportage 2.0 Crdi.',
+ 'sales': 2,
+ 'seller_id': 6001140364,
+ 'store_name': 'Zhongjin Heavy Machinery Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 0.99,
+ 'product_name': 'VR - EV1 Fuel Injector Connectors For many cars EV1 Injector '
+                 'Plug Car Accessories VR-FIC12',
+ 'sales': 30,
+ 'seller_id': 221246937,
+ 'store_name': 'VR racing Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 21.72,
+ 'product_name': '4PCS for Nissan March Versa 1.6 16V Fuel Injector Nozzle '
+                 '0280158276 16600-3AC0A',
+ 'sales': 6,
+ 'seller_id': 240048135,
+ 'store_name': 'A-U-T-O Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 14.14,
+ 'product_name': 'DLLA150P1734 Fuel Injector Nozzle Tips 0433172061 55214192 '
+                 'for Common Rail Diesel Injector 0445110322 0445110351 '
+                 '0445110398',
+ 'sales': 1,
+ 'seller_id': 201769901,
+ 'store_name': 'Shenzhen Shumatt Auto Technology Ltd.'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.16,
+ 'product_name': '96620255 1x Car Fuel Injectors Nozzle Injection for '
+                 'Chevrolet Matiz Hatchback 2005-2015 Pontiac Matiz Hatch '
+                 '2004-2010 Accessorie',
+ 'sales': 2,
+ 'seller_id': 2676482611,
+ 'store_name': 'Magic Wrench Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 16.09,
+ 'product_name': '3X Fuel Injectors 96620255 For Chevrolet Matiz '
+                 '0.8(M200,M250,KLYA) DAEWOO ADG02801 96351840 96518620',
+ 'sales': 13,
+ 'seller_id': 2658625760,
+ 'store_name': 'Wholesale lights Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 27.78,
+ 'product_name': 'BEFRAG 4903475 Fuel Injector Nozzle Tips M11-4903475 4903472 '
+                 'for M11 N14 Common Rail Diesel Injector China Made New',
+ 'sales': None,
+ 'seller_id': 201769901,
+ 'store_name': 'Shenzhen Shumatt Auto Technology Ltd.'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 8.81,
+ 'product_name': 'for Chrysler Grand Voyager 2000 Chrysler Voyager Chrysler '
+                 'Minivans Accessorie 1X Fuel Injectors Nozzle Injection '
+                 '4612402 4612177',
+ 'sales': 5,
+ 'seller_id': 2676482611,
+ 'store_name': 'Magic Wrench Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 9.9,
+ 'product_name': '1/4P Injector IPM002 IPM-002 Fuel Injector for Citroen C2 C3 '
+                 '1.1L 2003-2013 for Peugeot 0280156324 1984.C9',
+ 'sales': 4,
+ 'seller_id': 2672930230,
+ 'store_name': 'WEN DE Industrial - Truck - Auto Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 314.15,
+ 'product_name': '4PCS CR Diesel Fuel Injector 0445110300 0986435171 China '
+                 'Made New',
+ 'sales': None,
+ 'seller_id': 201769901,
+ 'store_name': 'Shenzhen Shumatt Auto Technology Ltd.'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 22.63,
+ 'product_name': '4Pcs Fuel Injectors Nozzle for Mazda Miata 1.6/1.8L '
+                 '1990-1995 195500-1970',
+ 'sales': 2,
+ 'seller_id': 2658816173,
+ 'store_name': 'Car Cars Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 19.15,
+ 'product_name': '4pcs/Lot Fuel Injectors 23250-22040 23209-22040 for '
+                 '1995-2008 Toyota 1.8 I4',
+ 'sales': 1,
+ 'seller_id': 2679891290,
+ 'store_name': 'Mechinery Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 39.06,
+ 'product_name': 'STPAT Flow balance Ev1 Deka 850cc High Impedance Nozzle Fuel '
+                 'Injector For Siemens V8 LT1 LS1 LS6 110324 FI114991 FI114992',
+ 'sales': None,
+ 'seller_id': 2602628722,
+ 'store_name': 'STPAT Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 17.32,
+ 'product_name': '35310-04000 New Car Fuel Injector Nozzle Fit For Hyundai i10 '
+                 '2016 Kia Picanto Mk2 1.0L 3531004000 35310 04000 4pcs/lot',
+ 'sales': 36,
+ 'seller_id': 2677490948,
+ 'store_name': 'Shop1103334366 Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 8.29,
+ 'product_name': '1/5/6PCS 0280155831 Fuel Injectors For Volvo C70 V70 S60 S80 '
+                 'XC70 XC90 For VW VR6 For BMW M3 M30 E30 91863400 9186340 '
+                 '0280155759',
+ 'sales': 1,
+ 'seller_id': 239023822,
+ 'store_name': 'CAR Repair Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 68.9,
+ 'product_name': 'For Mercedes Benz Sprinter 2.2 2.7 CDI Jeep Grand Cherokee '
+                 'II Diesel Fuel Injector A6110701687 0445110189',
+ 'sales': None,
+ 'seller_id': 6000566680,
+ 'store_name': 'Machine Part Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.49,
+ 'product_name': 'New Fuel Injector 15710-31G01 Fits for Suzuki King Quad 700 '
+                 'LT-A700 LTA 700 X ATV',
+ 'sales': 3,
+ 'seller_id': 237003243,
+ 'store_name': 'Mechanical Beast Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 11.7,
+ 'product_name': '10PCS Diesel Fuel Injector Pipe Oil Return Joints Repair '
+                 'Tool for FORD',
+ 'sales': 91,
+ 'seller_id': 2639114092,
+ 'store_name': 'Truck Repair Tools&Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 77.4,
+ 'product_name': 'NEW 0445110101 0445110064 Automobile Engine Parts Diesel '
+                 'Fuel Injector For Hyundai KIA 33800-27000 33800-27010.',
+ 'sales': None,
+ 'seller_id': 6001140364,
+ 'store_name': 'Zhongjin Heavy Machinery Parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.24,
+ 'product_name': 'Fuel Injectors Nozzle For Geely CK CK2 CK3 Kingkong MK LG '
+                 '0280156262 Replacement Accessories 4PCS',
+ 'sales': 10,
+ 'seller_id': 238796482,
+ 'store_name': 'Car- Products Supplies Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 8.95,
+ 'product_name': 'Fast Delivery Genuine 1000CC 1200CC Fuel Injector Nozzle '
+                 'IWP189 28040161A For Ducati Monster Streetfighter Moto Guzzi '
+                 'Stelvio',
+ 'sales': 2,
+ 'seller_id': 2676578216,
+ 'store_name': 'YZHIDIANF Autoparts Store Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 2.78,
+ 'product_name': 'High quality veterinary syringes with feeding tubes and '
+                 'various specifications of veterinary syringes',
+ 'sales': 22,
+ 'seller_id': 2671056692,
+ 'store_name': 'Luer Lock Adapter Collection Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 35.02,
+ 'product_name': 'Original Fuel Injector Nozzle OEM 23250-21040/23209-21040/ '
+                 '2325021040/ 2320921040 for 2006-2014 Ttoyota Yaris 4pcs free '
+                 'shopping',
+ 'sales': 3,
+ 'seller_id': 240147631,
+ 'store_name': 'Professional auto-parts Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 6.53,
+ 'product_name': 'Fuel Injector IWP-189 28040161A For Ducati 848 1098 1198 '
+                 'Monster Streetfighter Moto Guzzi',
+ 'sales': 9,
+ 'seller_id': 2660018763,
+ 'store_name': 'YOMTOVM Official Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 24.56,
+ 'product_name': '25ml/50ml Semi-Automatic Continuous Syringe Adjustable '
+                 'Vaccine Injector Injection for Using On Pig Cattle Sheep '
+                 'Chicken 1 Pc',
+ 'sales': 28,
+ 'seller_id': 229791728,
+ 'store_name': 'Eco Farm Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 25.45,
+ 'product_name': '4 PCS Cng Injectors for ALTEZZA 4cyl 1.5 1NZ Injection '
+                 'Valves OEM 23209-21020 23250-21020 2320921020 2325021020',
+ 'sales': 5,
+ 'seller_id': 2675233274,
+ 'store_name': 'BoFie Car Mod HiLites Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 35.2,
+ 'product_name': 'Set 4PCS FOR TOYOTA PRIUS PLUS 1.8L FUEL INJECTOR 2ZR-FXE '
+                 '23250-37010 23250-39146 NEW',
+ 'sales': 5,
+ 'seller_id': 202115036,
+ 'store_name': 'GZ X&D co.,LTD'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 255.01,
+ 'product_name': '1pc Injector 23670-11030 For Toyota Hilux Engine',
+ 'sales': None,
+ 'seller_id': 2673291253,
+ 'store_name': 'VEPDIESEL Official Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 5.74,
+ 'product_name': 'Upgraded Motorcycle Throttle Body 4-6-8-10 Holes Fuel '
+                 'injector Nozzle Easy Installation Suitable for Wave110i '
+                 'Wave-125i',
+ 'sales': 2,
+ 'seller_id': 2681666328,
+ 'store_name': 'Auto Service Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 14.52,
+ 'product_name': 'Fuel Injector 0280150501 0 280 150 501 for BMW E36 Z3 318i '
+                 '318ti Z3 1995-1998',
+ 'sales': 4,
+ 'seller_id': 202115036,
+ 'store_name': 'GZ X&D co.,LTD'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 12.2,
+ 'product_name': '1Pc 5ml/10ml Adjustable Continuous Syringe Injector Infusion '
+                 'Device,veterinary Injection Feeding Gun Chicken Vaccine '
+                 'Injection',
+ 'sales': 5,
+ 'seller_id': 234043034,
+ 'store_name': 'Sunshine Farm Store'}
+2025-04-18 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0>
+{'keyword': 'injector',
+ 'price': 4.24,
+ 'product_name': '35310-2E000 Fuel Injector For Hyundai Elantra 1.8 2.0 Kia '
+                 '1.6L 2011-2015 Forte 2.0L 353102E000 Car Accessories Nozzle',
+ 'sales': 5,
+ 'seller_id': 2670003951,
+ 'store_name': 'Shop1102139824 Store'}
+2025-04-18 16:20:11 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-04-18 16:20:11 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2025-04-18 16:20:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-injector.html?page=5spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/w/wholesale-injector.html?page=4spm=a2g0o.productlist.search.0)
+2025-04-18 16:20:12 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\core\scraper.py:208: UserWarning: The "SumaitongCrawlerSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+
+2025-04-18 16:31:33 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: sumaitong)
+2025-04-18 16:31:33 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.13.5, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 24.11.0, Python 3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:16) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.0.16 11 Feb 2025), cryptography 44.0.1, Platform Windows-10-10.0.19045-SP0
+2025-04-18 16:31:33 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-04-18 16:31:33 [asyncio] DEBUG: Using selector: SelectSelector
+2025-04-18 16:31:33 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:31:33 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:31:33 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:31:33 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:31:33 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-04-18 16:31:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.closespider.CloseSpider']
+2025-04-18 16:31:33 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'sumaitong',
+ 'CLOSESPIDER_TIMEOUT': 15,
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_LIMIT': 10,
+ 'DOWNLOADER_CLIENT_TLS_METHOD': 'TLSv1.2',
+ 'DOWNLOAD_DELAY': 2,
+ 'DOWNLOAD_TIMEOUT': 10,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/scrapy.log',
+ 'NEWSPIDER_MODULE': 'sumaitong.spiders',
+ 'SPIDER_MODULES': ['sumaitong.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-04-18 16:31:33 [selenium.webdriver.common.selenium_manager] DEBUG: Selenium Manager binary found at: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe
+2025-04-18 16:31:33 [selenium.webdriver.common.selenium_manager] DEBUG: Executing process: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe --browser chrome --language-binding python --output json
+2025-04-18 16:31:33 [selenium.webdriver.common.selenium_manager] DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-18 16:31:33 [selenium.webdriver.common.selenium_manager] DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-18 16:31:33 [selenium.webdriver.common.service] DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 11540 using 0 to output -3
+2025-04-18 16:31:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:64994/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled']}}}}
+2025-04-18 16:31:34 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): localhost:64994
+2025-04-18 16:31:34 [urllib3.connectionpool] DEBUG: http://localhost:64994 "POST /session HTTP/1.1" 200 0
+2025-04-18 16:31:34 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir11540_1665516786"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:64997"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ce9057c0a51b20591854f8c056f86430"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:31:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:31:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:64994/session/ce9057c0a51b20591854f8c056f86430/window/maximize {}
+2025-04-18 16:31:34 [urllib3.connectionpool] DEBUG: http://localhost:64994 "POST /session/ce9057c0a51b20591854f8c056f86430/window/maximize HTTP/1.1" 200 0
+2025-04-18 16:31:34 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"height":1056,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:31:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:31:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'sumaitong.middlewares.ProxyDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'sumaitong.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'sumaitong.middlewares.SliderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-04-18 16:31:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-04-18 16:31:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['sumaitong.pipelines.ProductListPipeline',
+ 'sumaitong.pipelines.ShopDetailPipeline',
+ 'sumaitong.pipelines.ProductDetailPipeline',
+ 'sumaitong.pipelines.SumaitongPipeline']
+2025-04-18 16:31:40 [scrapy.core.engine] INFO: Spider opened
+2025-04-18 16:31:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-04-18 16:31:40 [sumaitong_crawler] INFO: RandomUserAgentMiddleware is enabled.
+2025-04-18 16:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/)
+2025-04-18 16:31:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0)
+2025-04-18 16:31:44 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\core\scraper.py:208: UserWarning: The "SumaitongCrawlerSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+
+2025-04-18 16:31:44 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-04-18 16:31:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-04-18 16:31:44 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: tutorial/outputfile.json
+2025-04-18 16:31:44 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: output.json
+2025-04-18 16:31:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9257,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 61953,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 3.674297,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 4, 18, 8, 31, 44, 637972, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 284988,
+ 'httpcompression/response_count': 2,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 22,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'request_depth_max': 2,
+ 'response_received_count': 2,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 4, 18, 8, 31, 40, 963675, tzinfo=datetime.timezone.utc)}
+2025-04-18 16:31:44 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-04-18 16:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://localhost:64994/session/ce9057c0a51b20591854f8c056f86430 {}
+2025-04-18 16:31:44 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (2): localhost:64994
+2025-04-18 16:31:44 [urllib3.connectionpool] DEBUG: http://localhost:64994 "DELETE /session/ce9057c0a51b20591854f8c056f86430 HTTP/1.1" 200 0
+2025-04-18 16:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:32:03 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: sumaitong)
+2025-04-18 16:32:03 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.13.5, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 24.11.0, Python 3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:16) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.0.16 11 Feb 2025), cryptography 44.0.1, Platform Windows-10-10.0.19045-SP0
+2025-04-18 16:32:03 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-04-18 16:32:03 [asyncio] DEBUG: Using selector: SelectSelector
+2025-04-18 16:32:03 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:32:03 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:32:03 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:32:03 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:32:03 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-04-18 16:32:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.closespider.CloseSpider']
+2025-04-18 16:32:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'sumaitong',
+ 'CLOSESPIDER_TIMEOUT': 15,
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_LIMIT': 10,
+ 'DOWNLOADER_CLIENT_TLS_METHOD': 'TLSv1.2',
+ 'DOWNLOAD_DELAY': 2,
+ 'DOWNLOAD_TIMEOUT': 10,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/scrapy.log',
+ 'NEWSPIDER_MODULE': 'sumaitong.spiders',
+ 'SPIDER_MODULES': ['sumaitong.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-04-18 16:32:03 [selenium.webdriver.common.selenium_manager] DEBUG: Selenium Manager binary found at: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe
+2025-04-18 16:32:03 [selenium.webdriver.common.selenium_manager] DEBUG: Executing process: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe --browser chrome --language-binding python --output json
+2025-04-18 16:32:03 [selenium.webdriver.common.selenium_manager] DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-18 16:32:03 [selenium.webdriver.common.selenium_manager] DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-18 16:32:03 [selenium.webdriver.common.service] DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 3928 using 0 to output -3
+2025-04-18 16:32:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:65046/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled']}}}}
+2025-04-18 16:32:03 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): localhost:65046
+2025-04-18 16:32:04 [urllib3.connectionpool] DEBUG: http://localhost:65046 "POST /session HTTP/1.1" 200 0
+2025-04-18 16:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir3928_734771198"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:65049"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2d3c864a0568518b057826a0a15c2dc2"}} | headers=HTTPHeaderDict({'Content-Length': '880', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:65046/session/2d3c864a0568518b057826a0a15c2dc2/window/maximize {}
+2025-04-18 16:32:04 [urllib3.connectionpool] DEBUG: http://localhost:65046 "POST /session/2d3c864a0568518b057826a0a15c2dc2/window/maximize HTTP/1.1" 200 0
+2025-04-18 16:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"height":1056,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:32:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'sumaitong.middlewares.ProxyDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'sumaitong.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'sumaitong.middlewares.SliderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-04-18 16:32:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-04-18 16:32:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['sumaitong.pipelines.ProductListPipeline',
+ 'sumaitong.pipelines.ShopDetailPipeline',
+ 'sumaitong.pipelines.ProductDetailPipeline',
+ 'sumaitong.pipelines.SumaitongPipeline']
+2025-04-18 16:32:10 [scrapy.core.engine] INFO: Spider opened
+2025-04-18 16:32:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-04-18 16:32:10 [sumaitong_crawler] INFO: RandomUserAgentMiddleware is enabled.
+2025-04-18 16:32:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/)
+2025-04-18 16:32:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0> (referer: https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0)
+2025-04-18 16:32:18 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\core\scraper.py:208: UserWarning: The "SumaitongCrawlerSpider.parse" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, callback)
+
+2025-04-18 16:32:18 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.aliexpress.us/w/wholesale-.html?page=1&spm=a2g0o.productlist.search.0> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-04-18 16:32:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-04-18 16:32:18 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: tutorial/outputfile.json
+2025-04-18 16:32:18 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: output.json
+2025-04-18 16:32:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9239,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 61889,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 8.498777,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 4, 18, 8, 32, 18, 994024, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 284986,
+ 'httpcompression/response_count': 2,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 22,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'request_depth_max': 2,
+ 'response_received_count': 2,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 4, 18, 8, 32, 10, 495247, tzinfo=datetime.timezone.utc)}
+2025-04-18 16:32:18 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-04-18 16:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://localhost:65046/session/2d3c864a0568518b057826a0a15c2dc2 {}
+2025-04-18 16:32:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (2): localhost:65046
+2025-04-18 16:32:19 [urllib3.connectionpool] DEBUG: http://localhost:65046 "DELETE /session/2d3c864a0568518b057826a0a15c2dc2 HTTP/1.1" 200 0
+2025-04-18 16:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:32:41 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: sumaitong)
+2025-04-18 16:32:41 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.13.5, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 24.11.0, Python 3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:16) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.0.16 11 Feb 2025), cryptography 44.0.1, Platform Windows-10-10.0.19045-SP0
+2025-04-18 16:32:41 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-04-18 16:32:41 [asyncio] DEBUG: Using selector: SelectSelector
+2025-04-18 16:32:41 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:32:41 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:32:41 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-04-18 16:32:41 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-04-18 16:32:41 [py.warnings] WARNING: D:\anaconda3\envs\scrapper\Lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-04-18 16:32:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.closespider.CloseSpider']
+2025-04-18 16:32:41 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'sumaitong',
+ 'CLOSESPIDER_TIMEOUT': 15,
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_LIMIT': 10,
+ 'DOWNLOADER_CLIENT_TLS_METHOD': 'TLSv1.2',
+ 'DOWNLOAD_DELAY': 2,
+ 'DOWNLOAD_TIMEOUT': 10,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/scrapy.log',
+ 'NEWSPIDER_MODULE': 'sumaitong.spiders',
+ 'SPIDER_MODULES': ['sumaitong.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-04-18 16:32:41 [selenium.webdriver.common.selenium_manager] DEBUG: Selenium Manager binary found at: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe
+2025-04-18 16:32:41 [selenium.webdriver.common.selenium_manager] DEBUG: Executing process: D:\anaconda3\envs\scrapper\Lib\site-packages\selenium\webdriver\common\selenium-manager.exe --browser chrome --language-binding python --output json
+2025-04-18 16:32:41 [selenium.webdriver.common.selenium_manager] DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe
+2025-04-18 16:32:41 [selenium.webdriver.common.selenium_manager] DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-04-18 16:32:41 [selenium.webdriver.common.service] DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\135.0.7049.95\chromedriver.exe` in a child process with pid: 7996 using 0 to output -3
+2025-04-18 16:32:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:65083/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--disable-blink-features=AutomationControlled']}}}}
+2025-04-18 16:32:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): localhost:65083
+2025-04-18 16:32:42 [urllib3.connectionpool] DEBUG: http://localhost:65083 "POST /session HTTP/1.1" 200 0
+2025-04-18 16:32:42 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.85","chrome":{"chromedriverVersion":"135.0.7049.95 (de2eb485a1951079e63bdb57ce25544d2dc79c15-refs/branch-heads/7049@{#1836})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir7996_721182316"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:65086"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"4b52f3575e3162c7cd36dc8238eadba0"}} | headers=HTTPHeaderDict({'Content-Length': '880', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:32:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:32:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://localhost:65083/session/4b52f3575e3162c7cd36dc8238eadba0/window/maximize {}
+2025-04-18 16:32:42 [urllib3.connectionpool] DEBUG: http://localhost:65083 "POST /session/4b52f3575e3162c7cd36dc8238eadba0/window/maximize HTTP/1.1" 200 0
+2025-04-18 16:32:42 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":{"height":1056,"width":1936,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '52', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:32:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2025-04-18 16:32:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'sumaitong.middlewares.ProxyDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'sumaitong.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'sumaitong.middlewares.SliderMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-04-18 16:32:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-04-18 16:32:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['sumaitong.pipelines.ProductListPipeline',
+ 'sumaitong.pipelines.ShopDetailPipeline',
+ 'sumaitong.pipelines.ProductDetailPipeline',
+ 'sumaitong.pipelines.SumaitongPipeline']
+2025-04-18 16:32:48 [scrapy.core.engine] INFO: Spider opened
+2025-04-18 16:32:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-04-18 16:32:48 [sumaitong_crawler] INFO: RandomUserAgentMiddleware is enabled.
+2025-04-18 16:32:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0> (failed 1 times): User timeout caused connection failure: Getting https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0 took longer than 10.0 seconds..
+2025-04-18 16:33:03 [scrapy.core.engine] INFO: Closing spider (closespider_timeout)
+2025-04-18 16:33:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0> (failed 2 times): User timeout caused connection failure: Getting https://www.aliexpress.us/w/wholesale-injector.html?page=1&spm=a2g0o.productlist.search.0 took longer than 10.0 seconds..
+2025-04-18 16:33:08 [scrapy.extensions.feedexport] INFO: Stored jsonlines feed (0 items) in: tutorial/outputfile.json
+2025-04-18 16:33:08 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: output.json
+2025-04-18 16:33:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 2,
+ 'downloader/request_bytes': 9186,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'elapsed_time_seconds': 20.033791,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'closespider_timeout',
+ 'finish_time': datetime.datetime(2025, 4, 18, 8, 33, 8, 622932, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 21,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'responses_per_minute': None,
+ 'retry/count': 2,
+ 'retry/reason_count/twisted.internet.error.TimeoutError': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 4, 18, 8, 32, 48, 589141, tzinfo=datetime.timezone.utc)}
+2025-04-18 16:33:08 [scrapy.core.engine] INFO: Spider closed (closespider_timeout)
+2025-04-18 16:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://localhost:65083/session/4b52f3575e3162c7cd36dc8238eadba0 {}
+2025-04-18 16:33:08 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (2): localhost:65083
+2025-04-18 16:33:08 [urllib3.connectionpool] DEBUG: http://localhost:65083 "DELETE /session/4b52f3575e3162c7cd36dc8238eadba0 HTTP/1.1" 200 0
+2025-04-18 16:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-04-18 16:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request

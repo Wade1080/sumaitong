@@ -1,0 +1,24 @@
+
+
+<a id="a-link"
+    href="https://bixi-intl.alicdn.com/punish/punish:resource:template:AESpace:default_285801.html?qrcode=-WNT5hZl4IPXazPBAGWijw|aA2TTg|6IGeOA_0|cloud_ip_bl&uuid=f96353e61665e083d76b33c10065a28f&action=deny&origin=https%3A%2F%2Fshoprenderview.aliexpress.com%3A443%2Fasync%2Fexecute"></a>
+<script>
+var host = location.host;
+var parts = host.split('.');
+if (parts.length > 2){
+  host = parts.pop();
+  host = "." + parts.pop() + "." + host;
+}
+var exp = new Date();
+var maxAge = -100;
+exp.setTime(exp.getTime() + maxAge);
+var cookie = "x5secdata=;maxAge=" + maxAge + ";expires=" + exp.toUTCString() + ";path=/;domain=" + host + ";";
+document.cookie = cookie;
+document.cookie = cookie + 'Secure;SameSite=None';
+document.getElementById("a-link").click();
+ window._config_ = {
+   "action": "deny",
+   "url": "https://bixi-intl.alicdn.com/punish/punish:resource:template:AESpace:default_285801.html?qrcode=-WNT5hZl4IPXazPBAGWijw|aA2TTg|6IGeOA_0|cloud_ip_bl&uuid=f96353e61665e083d76b33c10065a28f&action=deny&origin=https%3A%2F%2Fshoprenderview.aliexpress.com%3A443%2Fasync%2Fexecute"
+};
+</script>
+<!--rgv587_flag:sm-->
